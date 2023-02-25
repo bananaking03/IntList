@@ -9,13 +9,13 @@ class IntListTest {
 	@Test
 	void test() {
 		intlist lijst = new intlist();
-		lijst.addInt(0);
+		lijst.addInt(1);
 		lijst.addInt(19);
 		lijst.addInt(87);
-		int[] testlijst1 = {0, 19, 87};
+		int[] testlijst1 = {1, 19, 87};
 		assertArrayEquals(testlijst1, lijst.toIntArray());
 		lijst.removeInt();
-		int[] testlijst2 = {0, 19};
+		int[] testlijst2 = {1, 19};
 		assertArrayEquals(testlijst2, lijst.toIntArray());
 		assertEquals(2, lijst.length());
 		assertEquals(19, lijst.intAt(1));
